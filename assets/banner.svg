@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="360" viewBox="0 0 1280 360" role="img" aria-label="Astro Agent Skills — current to Astro 6">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b0a1a"/>
+      <stop offset="0.55" stop-color="#13102b"/>
+      <stop offset="1" stop-color="#1c0f26"/>
+    </linearGradient>
+    <linearGradient id="brand" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#ff5d01"/>
+      <stop offset="0.5" stop-color="#d83bd2"/>
+      <stop offset="1" stop-color="#7611a6"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.1" r="0.9">
+      <stop offset="0" stop-color="#d83bd2" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#d83bd2" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="soft" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6"/>
+    </filter>
+  </defs>
+
+  <rect width="1280" height="360" rx="20" fill="url(#bg)"/>
+  <rect width="1280" height="360" rx="20" fill="url(#glow)"/>
+
+  <!-- starfield -->
+  <g fill="#ffffff">
+    <circle cx="120" cy="70" r="1.6" opacity="0.7"/>
+    <circle cx="300" cy="40" r="1.1" opacity="0.5"/>
+    <circle cx="520" cy="90" r="1.4" opacity="0.6"/>
+    <circle cx="980" cy="55" r="1.2" opacity="0.5"/>
+    <circle cx="1140" cy="100" r="1.7" opacity="0.7"/>
+    <circle cx="1200" cy="250" r="1.2" opacity="0.5"/>
+    <circle cx="90" cy="280" r="1.3" opacity="0.6"/>
+    <circle cx="420" cy="300" r="1.0" opacity="0.4"/>
+    <circle cx="760" cy="300" r="1.4" opacity="0.55"/>
+    <circle cx="1060" cy="300" r="1.1" opacity="0.45"/>
+    <circle cx="660" cy="44" r="1.0" opacity="0.45"/>
+    <circle cx="860" cy="92" r="1.2" opacity="0.5"/>
+  </g>
+
+  <!-- the Astro "rocket" arc, abstract -->
+  <path d="M 1080 300 C 1140 220, 1170 150, 1160 70" stroke="url(#brand)" stroke-width="3" fill="none" opacity="0.45" filter="url(#soft)"/>
+  <circle cx="1160" cy="70" r="6" fill="#ff5d01" filter="url(#soft)"/>
+  <circle cx="1160" cy="70" r="3.5" fill="#fff"/>
+
+  <!-- title -->
+  <text x="80" y="170" font-family="'Segoe UI', system-ui, -apple-system, Helvetica, Arial, sans-serif" font-size="76" font-weight="800" fill="url(#brand)">Astro Agent Skills</text>
+
+  <text x="82" y="216" font-family="'Segoe UI', system-ui, -apple-system, Helvetica, Arial, sans-serif" font-size="26" font-weight="500" fill="#c9c4e0">Accurate, up-to-date Astro expertise for your coding agent.</text>
+
+  <!-- badges -->
+  <g font-family="'Segoe UI', system-ui, -apple-system, Helvetica, Arial, sans-serif" font-size="18" font-weight="600">
+    <rect x="82" y="252" width="132" height="40" rx="20" fill="#ff5d01" fill-opacity="0.14" stroke="#ff5d01" stroke-opacity="0.5"/>
+    <text x="148" y="278" fill="#ff8a4a" text-anchor="middle">Astro 6</text>
+
+    <rect x="230" y="252" width="232" height="40" rx="20" fill="#d83bd2" fill-opacity="0.12" stroke="#d83bd2" stroke-opacity="0.45"/>
+    <text x="346" y="278" fill="#e98ce6" text-anchor="middle">astro-framework</text>
+
+    <rect x="478" y="252" width="220" height="40" rx="20" fill="#7611a6" fill-opacity="0.16" stroke="#a64fd6" stroke-opacity="0.45"/>
+    <text x="588" y="278" fill="#cba6e6" text-anchor="middle">learning-astro</text>
+  </g>
+
+  <!-- clients -->
+  <text x="84" y="326" font-family="'Segoe UI', system-ui, -apple-system, Helvetica, Arial, sans-serif" font-size="15" font-weight="500" fill="#8f89a8">Works with Claude Code · Cursor · Cline · Codex</text>
+</svg>
